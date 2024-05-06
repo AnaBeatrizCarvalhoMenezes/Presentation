@@ -14,12 +14,19 @@
     margin-top: 5%;
 }
 
+#cortitulo{
+    background-color: #242020;
+    width: 500px;
+    height: 100px;
+}
+
 #cta .title{
     font-size: 4rem;
+    font-weight: 200;
     color: #fff;
     font-family: "Chau Philomene One", sans-serif;
     padding-bottom: 0%;
-    background-color: #242020;
+    padding-left: 50px;
 }
 
 #cta .description{
