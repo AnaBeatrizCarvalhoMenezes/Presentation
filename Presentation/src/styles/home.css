@@ -6,18 +6,36 @@
     position: relative;
     height: 500px;
 }
+
+#ImagemSofia{
+    padding-top: 10px;
+    width: 500px;
+}
+
+#space{
+    display: flex;
+    width: 600px;
+}
+
+#seta{
+    color: #242020;
+    font-size: 5em;
+    align-self:center;
+}
+
 #cta{
     width: 35%;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 5%;
 }
 
 #cortitulo{
     background-color: #242020;
     width: 500px;
     height: 100px;
+    display: flex;
+    flex-direction:row;
 }
 
 #cta .title{
@@ -26,46 +44,23 @@
     color: #fff;
     font-family: "Chau Philomene One", sans-serif;
     padding-bottom: 0%;
-    padding-left: 50px;
+    padding-left: 40px;
 }
 
 #cta .description{
+    width: 500px;
     font-family: "Lora", serif;
-    font-size: 25px;
-    padding-top: 0;
-    color: #42326E;
+    font-size: 20px;
+    font-weight: 500;
+    color: #242020;
+    text-align: justify;
+    padding-bottom: 100px;
 }
 
-#cta_buttons a{
-    text-decoration: none;
-    color: #42326E;
+#Poesia1{
+    display: none;
 }
 
-#banner{
-    display: flex;
-    align-items: start;
-    justify-content: end;
-    width: 70%;
-}
-#banner img{
-    height: 400px;
-    width: auto;
-    border-radius: 20px;
-}
-
-@media screen and (max-width: 1170px){
-    #home {
-        min-height: 100%;
-        padding-top: 0px;
-        height: 300px;
-    }
-    #banner,
-    #banner img {
-        display: none;
-    }
-    #cta {
-        width: 100%;
-        text-align: center;
-        align-items: center;
-    }
+#Poesia2{
+    display: none;
 }
