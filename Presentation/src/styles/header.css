@@ -1,0 +1,112 @@
+/*css da navbar*/
+header{
+    width: 100%;/*Largura da página completa*/
+    padding: 10px 8%; /*tamanho do padding e 8% para responsividade*/
+    background-color: transparent;
+}/*características do header do html*/
+
+
+.linevav{
+    border-width: 0; 
+	height: 1px;
+    background: #242020;
+	border-top-width: 1px;
+    color: #242020;
+    width: 100%;
+    border: none;
+	text-align: left; /* Para o IE */
+    opacity: 0.5; /* Começa com opacidade 0 */
+	margin: 0 auto 0 0; /* Para navegadores standard */
+}
+#navbar{
+    width: 100%;
+    display: flex;/*itens lado a lado*/
+    justify-content: space-between;/*os itens se espaçam igualmente usando todo o espaço disponível*/
+    align-items: center;/*itens alinhados no centro*/
+
+}/*características da class navbar*/
+
+#nav_logo{
+    padding-top: 10px;
+    width: 20%;
+}/*caracteristicas da class nav_logo*/
+
+#nav_list { 
+    padding-top: 10px;
+    display: flex;/*itens lado a lado*/
+    gap: 100px;/*espaçamento entre os itens da lista*/
+    list-style: none;/*tira as caracteristicas padrão da list no html*/
+    color: #42326E;
+}/*caracteristicas dos itens da lista nav_list em conjunto*/
+
+.nav_item hr {
+    bottom: 0;
+    left: 0;
+    width: 0; /* Começa com largura 0 para fazer a transição da esquerda para a direita */
+    height: 2px;
+    background-color: #242020; /* Cor da linha */
+    border: none;
+    opacity: 0; /* Começa com opacidade 0 */
+    transition: width 0.7s ease-out, opacity 0.7s ease-out; /* Transições para largura e opacidade */
+}
+
+.nav_item:hover hr {
+    opacity: 1; /* Aumenta a opacidade para 1 */
+    width: 100%; /* Expande a linha para a largura completa */
+}
+
+.nav_item a {
+    color: #242020;
+    text-decoration: none;/*tira as caracteristicas padrão dos links no html*/
+}/*caracteristicas dos itens da lista nav_list separados, especificamente cada um dos itens*/
+
+.nav_item a:hover {
+    color: #242020;
+    font-weight: 600;
+    transition: font-weight .3s ease3s;
+}/*caracteristicas dos itens da lista nav_list separados, especificamente cada um dos itens*/
+
+.nav_item.active a {
+    color: #242020;
+    font-weight: 600;
+}/*quando o link for ativado, ele se comportará desta forma*/
+
+
+@media screen and (max-width: 1170px){
+    #nav_list,
+    #navbar .btn-default{
+        display: none;
+    }/*isso aqui faz com que o botão e a barra de navegação sumam*/
+    #mobile_btn {
+        border: none;
+        background-color: transparent;
+        color: #42326E;
+        font-size: 3rem;   
+        display: block;
+        cursor: pointer;
+    }
+    #nav_logo{
+        width: 20%;
+    }/*caracteristicas da class nav_logo*/
+
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }/*aparece quando vc clica no item preto no mobile*/
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+    #mobile_nav_list .nav_item{
+        list-style: none;
+        text-align:right;
+        font-size: 30px;
+    }
+    .linevav{
+        display: none;
+    }
+}/*isso aqui faz com que o ícone apareça quando tiver com estas condições, deixando resposivo*/

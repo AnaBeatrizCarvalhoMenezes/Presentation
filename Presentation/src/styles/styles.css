@@ -1,0 +1,42 @@
+/*css da dos estilos no geral*/
+/*Importar fontes usando google-fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;/*Zerando todas as margens das fontes*/
+    padding: 0;/*Zerando todos os padding*/
+    box-sizing: border-box;/*Responsividade*/
+}/*Isso faz todas as fontes da página seguirem esse padrão*/
+
+body {
+    background-color: #FFFFFF;
+}/*Isso faz todo o body do site ter as mesmas características*/
+
+
+section{
+    padding: 28px 8%;
+}
+.social-media-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #ffff;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #42326E;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+    transition: box-shadow .3s ease;
+}
+.social-media-buttons a:hover {
+    box-shadow: 0px 0px 12px 8px rgba(0,0,0,0.1);
+}
