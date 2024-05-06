@@ -36,7 +36,7 @@ header{
     display: flex;/*itens lado a lado*/
     gap: 100px;/*espaçamento entre os itens da lista*/
     list-style: none;/*tira as caracteristicas padrão da list no html*/
-    color: #42326E;
+    color: #242020;
 }/*caracteristicas dos itens da lista nav_list em conjunto*/
 
 .nav_item hr {
@@ -72,42 +72,3 @@ header{
     font-weight: 600;
 }/*quando o link for ativado, ele se comportará desta forma*/
 
-
-@media screen and (max-width: 1170px){
-    #nav_list,
-    #navbar .btn-default{
-        display: none;
-    }/*isso aqui faz com que o botão e a barra de navegação sumam*/
-    #mobile_btn {
-        border: none;
-        background-color: transparent;
-        color: #42326E;
-        font-size: 3rem;   
-        display: block;
-        cursor: pointer;
-    }
-    #nav_logo{
-        width: 20%;
-    }/*caracteristicas da class nav_logo*/
-
-    #mobile_menu.active {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-    }/*aparece quando vc clica no item preto no mobile*/
-
-    #mobile_nav_list {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        margin: 12px 0px;
-    }
-    #mobile_nav_list .nav_item{
-        list-style: none;
-        text-align:right;
-        font-size: 30px;
-    }
-    .linevav{
-        display: none;
-    }
-}/*isso aqui faz com que o ícone apareça quando tiver com estas condições, deixando resposivo*/

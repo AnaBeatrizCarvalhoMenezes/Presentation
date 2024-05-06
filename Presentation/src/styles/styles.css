@@ -18,3 +18,13 @@ body {
 section{
     padding: 28px 8%;
 }
+.slide {
+    opacity: 0; /* Inicia com opacidade 0 */
+    position: absolute; /* Permite sobreposição de slides */
+    width: 100%; /* Garanta que os slides ocupem todo o espaço do contêiner */
+    transition: opacity 0.5s ease-in-out; /* Transição suave de opacidade */
+}
+
+.slide.active {
+    opacity: 1; /* Torna o slide ativo visível */
+}

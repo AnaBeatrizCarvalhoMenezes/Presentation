@@ -21,6 +21,7 @@
     color: #242020;
     font-size: 5em;
     align-self:center;
+    cursor: pointer;
 }
 
 #cta{
@@ -55,12 +56,4 @@
     color: #242020;
     text-align: justify;
     padding-bottom: 100px;
-}
-
-#Poesia1{
-    display: none;
-}
-
-#Poesia2{
-    display: none;
 }
